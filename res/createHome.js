@@ -4,6 +4,13 @@ img.src = "res/img/787.jpg";
 img.style.width = "100%";
 img.style.height = "100%";
 document.body.appendChild(img);
+//make image fit screen ratio
+img.style.position = "absolute";
+img.style.top = "0";
+img.style.left = "0";
+img.style.transform = "scale(1.5)";
+
+
 
 
 //make animation
