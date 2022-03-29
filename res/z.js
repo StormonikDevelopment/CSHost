@@ -17,3 +17,9 @@ animation.style.top = "50%";
 animation.style.left = "50%";
 animation.style.transform = "translate(-50%, -50%)";
 
+//when user clicks body
+document.body.addEventListener("click", function(){
+    //take user to rickroll youtube video
+    window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+});
+

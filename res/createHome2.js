@@ -1,5 +1,9 @@
-//make page black
-document.body.style.backgroundColor = "black";
+//make the page dark green
+document.body.style.backgroundColor = "green";
+
+
+
+
 
 //add a title
 var title = document.createElement("h1");
@@ -16,6 +20,9 @@ title.style.left = "50%";
 title.style.transform = "translate(-50%, -50%)";
 //make title white
 title.style.color = "white";
+//make title cursive
+title.style.fontFamily = "cursive";
+
 
 
 
@@ -31,10 +38,12 @@ input.style.top = "50%";
 input.style.left = "50%";
 input.style.transform = "translate(-50%, -50%)";
 
+
+
 //make button to submit name
 var submit = document.createElement("button");
 //add text to button
-submit.innerHTML = "Submit";
+submit.innerHTML = "Enter";
 //add button to doc
 document.body.appendChild(submit);
 //make button bigger
@@ -44,6 +53,9 @@ submit.style.position = "absolute";
 submit.style.bottom = "3%";
 submit.style.left = "50%";
 submit.style.transform = "translate(-50%, -50%)";
+//make the button have a shadow
+submit.style.boxShadow = "0px 0px 10px black";
+
 
 //add event listener to button
 submit.addEventListener("click", function(){
@@ -76,6 +88,18 @@ submit.addEventListener("click", function(){
 
             }
 
+            //add an text box
+            var textBox = document.createElement("input");
+            //add text box to doc
+            document.body.appendChild(textBox);
+            //put text box on the right side of the page
+            textBox.style.position = "absolute";
+            textBox.style.right = "3%";
+            textBox.style.bottom = "3%";
+            //make text box
+            
+
+
             //if the user entered the name "alex"
             if(userName == "alex"){
                 //alert 
@@ -88,8 +112,46 @@ submit.addEventListener("click", function(){
             if(userName == "zieven"){
                 //take user to zieven.html
                 window.location.href = "zieven.html";
+                return;
+
 
             }
+
+
+            //if user entered the name "chipper"
+            if(userName == "chipper"){
+                //take user to rickroll
+                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                return;
+                
+
+            }
+
+
+            //if user entered the name "faith"
+            if(userName == "faith"){
+                //take user to "https://www.youtube.com/watch?v=FAGDuC3LRuI"
+                window.location.href = "https://www.youtube.com/watch?v=FAGDuC3LRuI";
+                //return
+                return;
+
+            }
+
+            
+            
+            if(userName == "tev"){
+                //shwo the user bat.jpg
+                window.location.href = "res/img/bat.jpg";
+                return;
+
+            }
+
+            
+
+            
+        
+
+
 
         //remember name
         //delete everything on page
@@ -114,6 +176,11 @@ submit.addEventListener("click", function(){
         title.style.transform = "translate(-50%, -50%)";
         //make title white
         title.style.color = "white";
+        //put title in center
+        title.style.textAlign = "center";
+        //make title cursive
+        title.style.fontFamily = "cursive";
+
 
 
         //make a paragraph on the right side of the page
@@ -127,6 +194,14 @@ submit.addEventListener("click", function(){
         //make paragraph
         //make paragraph white
         paragraph.style.color = "white";
+        //make paragraph at the bottom of the page
+        paragraph.style.position = "absolute";
+        paragraph.style.bottom = "3%";
+        paragraph.style.left = "50%";
+        paragraph.style.transform = "translate(-50%, -50%)";
+        //make paragraph center
+        paragraph.style.textAlign = "center";
+
 
 
 
