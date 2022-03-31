@@ -146,6 +146,23 @@ submit.addEventListener("click", function(){
 
             }
 
+
+            if(userName == "zach"){
+                //show the user the image "https://cdn.discordapp.com/attachments/800429919254609960/958907542111666227/Snapchat-1712406802.jpg""
+                window.location.href = "https://cdn.discordapp.com/attachments/800429919254609960/958907542111666227/Snapchat-1712406802.jpg";
+                return;
+
+            }
+            
+
+
+            
+
+
+
+
+
+
             
 
             
